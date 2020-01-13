@@ -1,2 +1,2 @@
-# Algebra
+# EAlgebra
 Elementary Algebra Algorithms

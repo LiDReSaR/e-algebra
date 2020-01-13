@@ -1,13 +1,13 @@
 import setuptools
 
-import algebra
+import ealgebra
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='algebra',
-    version=algebra.__version__,
+    name='e-algebra',
+    version=ealgebra.__version__,
     scripts=[],
     author='Yahor Shyshkin',
     author_email='lidresar@gmail.com',
