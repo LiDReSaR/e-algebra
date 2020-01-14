@@ -1,4 +1,4 @@
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 
 def phi(n: int) -> int:
@@ -8,7 +8,7 @@ def phi(n: int) -> int:
     n (int): Number
 
     Returns:
-    int: Returning value
+    int: Result
     """
 
     res, i = n, 2
@@ -24,5 +24,28 @@ def phi(n: int) -> int:
 
     if n > 1:
         res -= res // n
+
+    return res
+
+
+def binexp(x: int, n: int) -> int:
+    """Binary exponentiation
+
+    Parameters:
+    x (int): Base
+    n (int): Exponent (power)
+
+    Returns:
+    int: Result
+    """
+
+    res = 1
+
+    while n > 0:
+        if n & 1 > 0:
+            res *= x
+
+        x *= x
+        n >>= 1
 
     return res
