@@ -1,4 +1,4 @@
-# e-algebra – Elementary Algebra
+# e-algebra - Elementary Algebra
 Elementary Algebra Algorithms
 
 ## Installation
