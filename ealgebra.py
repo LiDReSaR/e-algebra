@@ -1,4 +1,4 @@
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 
 def phi(n: int) -> int:
@@ -49,3 +49,34 @@ def binexp(x: int, n: int) -> int:
         n >>= 1
 
     return res
+
+
+def gcd(x: int, y: int) -> int:
+    """Greatest Common Divisor
+
+    Parameters:
+    x (int): Number
+    y (int): Number
+
+    Returns:
+    int: Result
+    """
+
+    while y > 0:
+        x, y = y, x % y
+
+    return x
+
+
+def lcm(x: int, y: int) -> int:
+    """Least Common Multiplier
+
+    Parameters:
+    x (int): Number
+    y (int): Number
+
+    Returns:
+    int: Result
+    """
+
+    return x // gcd(x, y) * y
